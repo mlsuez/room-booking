@@ -1,0 +1,16 @@
+import express from 'express';
+import cors from 'cors';
+import session from 'express-session';
+import dotenv from 'dotenv';
+import authRoutes from './routes/auth.js';
+import bookingsRoutes from './routes/bookings.js';
+dotenv.config();
+const app = express();
+app.use(cors({ origin: process.env.FRONTEND_URL, credentials: true }));
+app.use(express.json());
+app.use(session({ secret: process.env.SESSION_SECRET, resave: false, saveUninitialized: false, cookie: { secure: process.env.NODE_ENV === 'production', httpOnly: true, maxAge: 7 * 24 * 60 * 60 * 1000 } }));
+app.use('/auth', authRoutes);
+app.use('/api/bookings', bookingsRoutes);
+app.get('/health', (_, res) => res.json({ ok: true }));
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
