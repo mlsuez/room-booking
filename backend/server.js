@@ -6,6 +6,7 @@ import authRoutes from './routes/auth.js';
 import bookingsRoutes from './routes/bookings.js';
 dotenv.config();
 const app = express();
+app.set('trust proxy', 1);
 app.use(cors({ origin: process.env.FRONTEND_URL, credentials: true }));
 app.use(express.json());
 app.use(session({ secret: process.env.SESSION_SECRET, resave: false, saveUninitialized: false, cookie: { secure: process.env.NODE_ENV === 'production', httpOnly: true, sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax', maxAge: 7 * 24 * 60 * 60 * 1000 } }));
