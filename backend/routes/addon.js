@@ -88,6 +88,16 @@ router.get('/taskpane.html', (req, res) => {
   res.type('html').send(TASKPANE_TEMPLATE.replace('%%ADDON_API_KEY%%', key));
 });
 
+router.get('/icon32.png', (req, res) => {
+  const buf = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKUlEQVR42u3NsQkAAAgDsN4h/f9Or3AQAtmTdk5FIBAIBAKBQCAQfAkWCKtIECxxUHQAAAAASUVORK5CYII=', 'base64');
+  res.set('Content-Type', 'image/png').send(buf);
+});
+
+router.get('/icon64.png', (req, res) => {
+  const buf = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAATklEQVR42u3PQQkAAAgEsMsh1z+nEXwLgxVY2nktAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgKXBY9FIEz/LPRNAAAAAElFTkSuQmCC', 'base64');
+  res.set('Content-Type', 'image/png').send(buf);
+});
+
 const ROOMS = [{ id: 'sala-reuniones', name: 'Sala de Reuniones' }, { id: 'sala-multiuso', name: 'Sala Multiuso' }];
 
 function isBlocked(roomId, startTime) {

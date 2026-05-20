@@ -8,8 +8,8 @@
   <DefaultLocale>es-AR</DefaultLocale>
   <DisplayName DefaultValue="Reserva de Salas"/>
   <Description DefaultValue="Reservá salas de reuniones directamente desde Outlook"/>
-  <IconUrl DefaultValue="https://room-booking-production-18f7.up.railway.app/health"/>
-  <HighResolutionIconUrl DefaultValue="https://room-booking-production-18f7.up.railway.app/health"/>
+  <IconUrl DefaultValue="https://room-booking-production-18f7.up.railway.app/addon/icon32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://room-booking-production-18f7.up.railway.app/addon/icon64.png"/>
   <SupportUrl DefaultValue="https://room-booking-production-18f7.up.railway.app"/>
   <AppDomains>
     <AppDomain>room-booking-production-18f7.up.railway.app</AppDomain>
