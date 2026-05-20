@@ -26,7 +26,6 @@
     <Form xsi:type="ItemEdit">
       <DesktopSettings>
         <SourceLocation DefaultValue="https://room-booking-production-18f7.up.railway.app/addon/taskpane.html"/>
-        <RequestedHeight>400</RequestedHeight>
       </DesktopSettings>
     </Form>
   </FormSettings>
