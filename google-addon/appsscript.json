@@ -1,0 +1,21 @@
+{
+  "timeZone": "America/Argentina/Buenos_Aires",
+  "dependencies": {},
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "addOns": {
+    "common": {
+      "name": "Reserva de Salas",
+      "logoUrl": "https://fonts.gstatic.com/s/i/googlematerialicons/meeting_room/v6/white-24dp/1x/gm_meeting_room_white_24dp.png",
+      "homepageTrigger": {
+        "runFunction": "onHomepage"
+      }
+    },
+    "calendar": {
+      "eventOpenTrigger": {
+        "runFunction": "onCalendarEventOpen"
+      },
+      "currentEventAccess": "READ_ONLY"
+    }
+  }
+}
