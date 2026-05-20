@@ -4,12 +4,12 @@
   xsi:type="MailApp">
   <Id>a1b2c3d4-e5f6-7890-abcd-ef1234567890</Id>
   <Version>1.0.0</Version>
-  <ProviderName>Atlas Cines / FilmSuez</ProviderName>
-  <DefaultLocale>es-AR</DefaultLocale>
+  <ProviderName>Atlas Cines FilmSuez</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Reserva de Salas"/>
-  <Description DefaultValue="Reservá salas de reuniones directamente desde Outlook"/>
-  <IconUrl DefaultValue="https://room-booking-production-18f7.up.railway.app/addon/icon32.png"/>
-  <HighResolutionIconUrl DefaultValue="https://room-booking-production-18f7.up.railway.app/addon/icon64.png"/>
+  <Description DefaultValue="Reserva salas de reuniones desde Outlook"/>
+  <IconUrl DefaultValue="https://room-booking-production-18f7.up.railway.app/addon/icon64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://room-booking-production-18f7.up.railway.app/addon/icon128.png"/>
   <SupportUrl DefaultValue="https://room-booking-production-18f7.up.railway.app"/>
   <AppDomains>
     <AppDomain>room-booking-production-18f7.up.railway.app</AppDomain>
